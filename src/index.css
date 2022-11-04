@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-zinc-900 text-center;
+	}
+
+	.App__container {
+		@apply max-w-xs mx-auto my-6;
+	}
+
+	.App__title {
+		@apply font-semibold text-transparent text-xl bg-clip-text bg-gradient-to-r from-amber-300 to-violet-400;
+	}
+
+	.App__password--container {
+		@apply text-amber-50 bg-zinc-700 flex justify-between px-4 py-3 rounded mt-4 items-center;
+	}
+
+	.App__password--copy--btn {
+		@apply text-amber-300;
+	}
+
+	.App__main {
+		@apply bg-zinc-700 text-amber-50 rounded mt-4 px-4 py-3;
+	}
+
+	.App__length--container {
+		@apply flex justify-between items-center mb-2;
+	}
+
+	.App__length--display {
+		@apply text-amber-300 font-bold;
+	}
+
+	.App__form--length {
+		@apply flex gap-2 items-center;
+	}
+
+	.App__length--input {
+		@apply w-full appearance-none bg-zinc-800 h-2 rounded;
+	}
+
+	.App__length--input::-webkit-slider-thumb {
+		@apply bg-amber-300 appearance-none h-5 w-5 rounded-full cursor-pointer active:bg-amber-100;
+	}
+
+	.App__form--check {
+		@apply flex flex-col justify-center items-start gap-2 mt-4;
+	}
+
+	.App__form--check input {
+		@apply appearance-none w-4 h-4 border mr-5 checked:bg-amber-300 rounded-full;
+	}
+
+	.App__form--footer {
+		@apply flex justify-center items-center w-full;
+	}
+
+	.App__form--submit {
+		@apply bg-gradient-to-r from-amber-300 to-violet-400 mt-4 px-4 py-3 w-full text-zinc-900 rounded hover:bg-gradient-to-r hover:from-amber-200 hover:to-violet-300 uppercase font-bold;
+	}
+
+	.App__message {
+		@apply bg-green-200 py-4 flex justify-center gap-2 px-2 mt-4 rounded-lg animate-slideRight;
+	}
+
+	.App__message--text {
+		@apply text-green-900 font-bold uppercase;
+	}
+
+	.App__message svg {
+		@apply fill-green-900;
+	}
+}
